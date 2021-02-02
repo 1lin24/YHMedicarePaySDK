@@ -6,6 +6,7 @@
 //  Copyright © 2018年 yh. All rights reserved.
 //
 //  Version 1.0.9.2  by Jagtu  2018/11/21
+//  Version 1.1.9.1  by Jagtu  2020/07/09
 //
 
 // In this header, you should import all the public headers of your framework using statements like #import <YHMedicarePaySDK/PublicHeader.h>
@@ -77,6 +78,16 @@
  */
 + (void)logout;
 
+
+/**
+ *  查询待结算
+ *  ->展示已结算记录列表页
+ *
+ *  @param token     用户令牌
+ *  @param completionBlock 失败回调Block。主要处理token过期等错误
+ */
++ (void)queryUnSettledRecodeWithToken:(NSString *)token
+                         completion:(YHMPPayCompletionBlock)completionBlock;
 
 @end
 
