@@ -47,6 +47,7 @@
 @property(nonatomic,copy)NSString * appChannelType;
 
 
+//@property(nonatomic,strong)NSString *isWjw;//1表示多家医院，0单医院，默认为1.
 /**
  初始化设置
  
